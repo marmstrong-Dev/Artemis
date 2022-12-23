@@ -53,6 +53,8 @@ public class AnimalService implements IAnimalService {
 
             updatedAnimal.setName(animal.getName());
             updatedAnimal.setDescription(animal.getDescription());
+            updatedAnimal.setKeeper(animal.getKeeper());
+            updatedAnimal.setSpecies(animal.getSpecies());
 
             return animalRepo.save(updatedAnimal);
         }
